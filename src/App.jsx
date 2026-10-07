@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { useState } from 'react'
 
@@ -42,7 +41,16 @@ const App = () => {
     <div className='min-h-screen bg-slate-950 text-white'>
 
       {/* Top Section */}
-      <div className='flex flex-col lg:flex-row justify-evenly'>
+      <div className='relative flex flex-col lg:flex-row justify-evenly'>
+
+        {/* Logo - Mobile */}
+        <div className='flex justify-center pt-4 mb-2 lg:hidden'>
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/016/731/807/original/notes-3d-icon-png.png"
+            alt="Notes"
+            className='w-24 h-24 sm:w-32 sm:h-32'
+          />
+        </div>
 
         {/* Left Side */}
         <div className='w-full lg:w-1/2'>
@@ -90,8 +98,8 @@ const App = () => {
 
         </div>
 
-        {/* Logo */}
-        <div className='absolute top-4 right-4'>
+        {/* Logo - Desktop */}
+        <div className='hidden lg:block absolute top-4 right-4'>
           <img
             src="https://static.vecteezy.com/system/resources/previews/016/731/807/original/notes-3d-icon-png.png"
             alt="Notes"
@@ -152,4 +160,3 @@ const App = () => {
 }
 
 export default App
-
